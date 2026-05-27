@@ -1,0 +1,222 @@
+fileVersion: 1
+id: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+name: STG_CUSTOMER_ADDRESS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd38a2b1-774e-41aa-bda3-9ba7d98ed386
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CA_ADDRESS_SK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9ec14fe-40cf-48e2-ba74-90bcae3f00af
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eddbba28-10f0-4723-ad6c-5542bc5fbaa7
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(16)
+        description: ""
+        name: CA_ADDRESS_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dee3bbc3-c1d1-4e8f-b5b6-4f2f6d5c12f9
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc5a9efc-be83-4b8c-865f-551cbb42fe67
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: CA_STREET_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c9cd298a-2168-4965-bca3-e4ece5fb3663
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55c35261-6cfb-42bb-99f8-7fe43e39f470
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(60)
+        description: ""
+        name: CA_STREET_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8874c329-6b4a-4205-9510-817aa0c12c32
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad3f19cb-ac32-4fcd-98bc-e67c537e8649
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: CA_STREET_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c00cad2b-df1c-4b1c-af82-def423339b91
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f640609e-4e4e-4358-a5d3-57805169d72b
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: CA_SUITE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00b96920-4748-4374-8ee9-51f63635b4db
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 274d2e7a-7109-4fd7-a6c3-d4534fb6c065
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(60)
+        description: ""
+        name: CA_CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 295c608b-3b08-4a44-8420-a31ce921d6ad
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c441cb84-1e75-4fdc-8ded-a12b6bd78738
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(30)
+        description: ""
+        name: CA_COUNTY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57534a69-0221-49d0-95eb-6e5fc12e74ae
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9188faa7-1d12-432e-86f9-28af33312b1a
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: CA_STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 12817312-b3ea-47da-9eb3-006c7cf0df7d
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62a662df-808d-4bfd-ace0-9e30ab9cc6f1
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: CA_ZIP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76d5e1fb-995d-43ab-91a1-cecadabd5a64
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 786ae1da-b47a-41b8-9cb1-b31fef80057d
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: CA_COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3abd627e-7c25-41e1-ac13-9f13a08fafc2
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e3c8450-4573-46f3-856b-48f8325c0a9b
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: NUMBER(5,2)
+        description: ""
+        name: CA_GMT_OFFSET
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e31401de-04f7-48b7-a087-b197ff614122
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f7a2882-985c-4495-b096-390cde9ae1b0
+          stepCounter: d09fd096-d365-489d-b7d0-4e21a48f7e0b
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: CA_LOCATION_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e106618d-ac54-4f4b-b681-cdd2082b8801
+                stepCounter: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          CUSTOMER_ADDRESS: 13a6fbb4-0068-4870-b2a7-ba9966339ca9
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: CUSTOMER_ADDRESS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'CUSTOMER_ADDRESS') }} "CUSTOMER_ADDRESS"
+        name: STG_CUSTOMER_ADDRESS
+        noLinkRefs: []
+  name: STG_CUSTOMER_ADDRESS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
